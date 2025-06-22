@@ -32,7 +32,7 @@ module Chapter-01 where
   _imp_ : 𝔹 → 𝔹 → 𝔹
   -- p imp q = (~ p) || q
   tt imp b = b
-  ff imp b = ff
+  ff imp b = tt
 
 
   if_then_else_ : ∀ {ℓ} {A : Set ℓ} → 𝔹 → A → A → A
